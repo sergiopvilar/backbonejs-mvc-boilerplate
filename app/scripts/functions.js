@@ -1,6 +1,10 @@
+/* global define, _config */
+
 define([], function(){
 
-    var fn = function(){
+	'use strict';
+
+    var Fn = function(){
 
         this.debug = function(obj){
 
@@ -8,10 +12,10 @@ define([], function(){
                 console.debug(obj);
             }
 
-        }
+        };
 
     };
 
-    return new fn;
+    return new Fn();
 
 });

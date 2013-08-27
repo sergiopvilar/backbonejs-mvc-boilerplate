@@ -1,7 +1,11 @@
+/* global define, Backbone, _, _fn, _config, alert */
+
 define([
     'controllers/sampleController',
     'text!templates/sampleTemplate.html'
 ], function (Controller, Template) {
+
+    'use strict';
 
     var sampleView = Backbone.View.extend({
 
@@ -35,7 +39,7 @@ define([
         UIEventsInit: function () {
 
             $('a.hi').click(function(){
-               alert($(this).text());
+                alert($(this).text());
             });
 
         }

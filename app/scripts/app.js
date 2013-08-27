@@ -1,7 +1,10 @@
-// Filename: app.js
+/* global define */
+
 define([
     'router'
 ], function (Router) {
+
+	'use strict';
 
     var initialize = function () {
 

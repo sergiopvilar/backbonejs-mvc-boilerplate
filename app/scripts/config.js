@@ -1,7 +1,13 @@
+/* global define */
+
 define([], function () {
+
+	'use strict';
+
     return {
         debug: false,
-        api_url: 'http://php/',
+        apiUrl: 'http://yourserver/',
         container: $('#main')
-    }
+    };
+
 });

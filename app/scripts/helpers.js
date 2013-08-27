@@ -1,13 +1,17 @@
+/* global define */
+
 define([], function(){
 
-    var hp = function(){
+	'use strict';
+
+    var Hp = function(){
 
         this.actualDate = function(){
             return new Date().toLocaleDateString();
-        }
+        };
 
     };
 
-    return new hp;
+    return new Hp();
 
 });

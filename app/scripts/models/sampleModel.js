@@ -1,12 +1,16 @@
+/* global define, Backbone, _config */
+
 define([
 ], function () {
 
+	'use strict';
+
     var BootstrapModel = Backbone.Model.extend({
 
-        urlRoot: _config.api_url + "json.php"
+        urlRoot: _config.apiUrl + 'your path'
 
     });
 
-    return new BootstrapModel;
+    return new BootstrapModel();
 
 });

@@ -1,10 +1,12 @@
+/* global define */
+
 define([
     'models/sampleModel'
 ], function (Model) {
 
-    "use strict";
+    'use strict';
 
-    var sampleController = function () {
+    var SampleController = function () {
 
         this.model = Model;
 
@@ -14,24 +16,28 @@ define([
 
         this.fetch = function (success, error) {
 
-            var model_fetch = this.model.fetch();
+            var modelFetch = this.model.fetch();
 
-            model_fetch.success(function (data) {
+            modelFetch.success(function (data) {
 
-                if (success) success(data);
-
-            });
-
-            model_fetch.error(function (er) {
-
-                if (error) error(er);
+                if (success){
+                    success(data);
+                }
 
             });
 
-        }
+            modelFetch.error(function (er) {
+
+                if (error){
+                    error(er);
+                }
+
+            });
+
+        };
 
     };
 
-    return new sampleController()
+    return new SampleController();
 
 });
