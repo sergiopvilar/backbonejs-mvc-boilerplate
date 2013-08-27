@@ -33,6 +33,9 @@ require.config({
         },
         'helpers': {
             deps: ['jquery', 'config', 'functions']
+        },
+        'router':{
+            deps: ['backbone']
         }
     }
 
